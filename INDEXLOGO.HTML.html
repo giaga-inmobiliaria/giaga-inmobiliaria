@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "inverse-on-surface": "#ecf1ff", "on-tertiary-fixed-variant": "#1d4f40", "on-primary-fixed": "#0e1c2f", "surface-container-highest": "#d8e3fb", "secondary-container": "#fedeb2", "surface-container-low": "#f0f3ff", "on-error": "#ffffff", "tertiary-fixed-dim": "#9ed1bd", "error": "#ba1a1a", "surface-variant": "#d8e3fb", "on-error-container": "#93000a", "outline": "#75777d", "on-primary-fixed-variant": "#3a475c", "secondary": "#725b38", "surface-container-lowest": "#ffffff", "status-corporate": "#1E3A8A", "surface-bright": "#f9f9ff", "inverse-surface": "#263143", "surface-container": "#e7eeff", "on-tertiary-fixed": "#002117", "surface-tint": "#525f75", "background": "#f9f9ff", "on-primary-container": "#77849c", "surface": "#f9f9ff", "border-strong": "#CBD5E1", "tertiary-container": "#002117", "emerald-tint": "#E8F5E9", "primary-fixed-dim": "#bac7e1", "inverse-primary": "#bac7e1", "primary-fixed": "#d6e3fe", "on-secondary-container": "#78603e", "outline-variant": "#c5c6cd", "error-container": "#ffdad6", "border-subtle": "#E2E8F0", "status-exclusive": "#78350F", "on-tertiary": "#ffffff", "tertiary": "#000000", "on-secondary-fixed-variant": "#584323", "on-surface-variant": "#44474c", "secondary-fixed-dim": "#e0c298", "gold-light": "#EADBC8", "surface-dim": "#cfdaf2", "surface-muted": "#F1F5F9", "gold-hover": "#B3956B", "surface-canvas": "#F8FAFC", "secondary-fixed": "#fedeb2", "tertiary-fixed": "#baeed9", "on-secondary-fixed": "#281800", "on-secondary": "#ffffff", "surface-card": "#FFFFFF", "on-primary": "#ffffff", "on-surface": "#111c2d", "on-background": "#111c2d", "primary-container": "#0e1c2f", "primary": "#000000", "on-tertiary-container": "#5d8d7c", "surface-container-high": "#dee8ff" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-wide": "6rem", "margin-desktop": "4rem", "space-md": "1rem", "space-xl": "2rem", "space-2xl": "3rem", "space-3xl": "4.5rem", "space-2xs": "0.25rem", "space-sm": "0.75rem", "margin": "1.25rem", "space-4xl": "6rem", "gutter": "1.5rem", "space-xs": "0.5rem", "space-lg": "1.5rem", "margin-tablet": "2.5rem", "gutter-desktop": "2rem" }, "fontFamily": { "display-hero-mobile": [ "Playfair Display" ], "display-hero": [ "Playfair Display" ], "label-md": [ "Plus Jakarta Sans" ], "body-lg": [ "Plus Jakarta Sans" ], "headline-xl": [ "Playfair Display" ], "metric-display": [ "Playfair Display" ], "body-sm": [ "Plus Jakarta Sans" ], "headline-sm": [ "Plus Jakarta Sans" ], "headline-md": [ "Playfair Display" ], "body-md": [ "Plus Jakarta Sans" ], "headline-lg-mobile": [ "Playfair Display" ], "label-lg": [ "Plus Jakarta Sans" ], "headline-lg": [ "Playfair Display" ], "subheading-lg": [ "Plus Jakarta Sans" ], "headline-xl-mobile": [ "Playfair Display" ], "label-eyebrow": [ "Plus Jakarta Sans" ] }, "fontSize": { "display-hero-mobile": [ "38px", { "lineHeight": "46px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-md": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" } ], "body-lg": [ "17px", { "lineHeight": "28px", "fontWeight": "400" } ], "headline-xl": [ "42px", { "lineHeight": "50px", "letterSpacing": "-0.015em", "fontWeight": "600" } ], "metric-display": [ "44px", { "lineHeight": "52px", "fontWeight": "700" } ], "body-sm": [ "13px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-sm": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "fontWeight": "500" } ], "body-md": [ "15px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-lg-mobile": [ "26px", { "lineHeight": "34px", "letterSpacing": "-0.005em", "fontWeight": "500" } ], "label-lg": [ "14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "subheading-lg": [ "18px", { "lineHeight": "26px", "fontWeight": "500" } ], "headline-xl-mobile": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "label-eyebrow": [ "11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "700" } ] } } } };</script></head><body class="bg-surface-canvas font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-card/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(11,25,44,0.04)]"><div class="bg-primary text-on-primary text-body-sm font-body-sm"><div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop h-10 flex items-center justify-between"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[15px] text-secondary-fixed">phone</span><span>+54 11 5238-9900</span></div><div class="hidden sm:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[15px] text-secondary-fixed">chat</span><span>WhatsApp Institucional</span></div><div class="hidden lg:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[15px] text-secondary-fixed">verified</span><span>CUCICBA Mat. 6842 | CMCPSI Mat. 5920</span></div></div><div class="flex items-center gap-space-lg"><span class="hidden md:inline text-label-eyebrow uppercase tracking-widest text-secondary-fixed">Boutique Inmobiliaria &amp; Wealth Advisory</span><a class="text-body-sm font-label-md text-secondary-fixed hover:text-on-primary transition-colors flex items-center gap-space-2xs" data-path="tasaciones" href="#"><span class="material-symbols-outlined text-[14px]">real_estate_agent</span><span>Tasaciones Online</span></a></div></div></div><div class="h-20 max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm" data-path="home" href="#"><img alt="Giaga Inmobiliaria Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VlXbsBg9QNl_opb-gKqgE_hYeTMpczdAinh43X3DTLMep_cvk7o4ptZegJDDjaK1cFVJL_U40O91LU3Q9e9OiSoKBpI9FO19w18nwMfKWgnk6OrSzWSz457JfA0ewoD_JUg4CcZ3UT2TnDe8HYbz1Qxkn_wAqeq-FCMZf7qLLZBAM3n-OmwxgKrYQsEKY84bm7k16OPZNkmL4DqCT9RuG2lp1hHw7NiNS8g5Ec27jm"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-primary leading-tight font-bold">GIAGA</span><span class="font-label-eyebrow text-label-eyebrow tracking-widest text-secondary uppercase -mt-1">Propiedades Corporativas</span></div></a><nav class="hidden xl:flex items-center gap-space-md font-label-lg text-label-lg" data-active-classes="bg-primary text-on-primary font-bold rounded-lg px-space-sm py-space-xs"><a class="text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-xs" data-path="propiedades" href="#">Propiedades</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-xs" data-path="corporativo" href="#">Corporativo &amp; Oficinas</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-xs" data-path="tasaciones" href="#">Tasaciones &amp; Valuaciones</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-xs" data-path="inversiones" href="#">Inversiones &amp; Fideicomisos</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-xs" data-path="nosotros" href="#">Nosotros</a><a class="text-on-surface-variant hover:text-on-surface transition-colors py-space-xs px-space-xs" data-path="contacto" href="#">Contacto Empresarial</a></nav></div><div class="flex items-center gap-space-sm"><a class="hidden md:inline-flex items-center justify-center font-label-lg text-label-lg px-space-lg py-space-xs bg-primary text-on-primary rounded shadow-sm hover:bg-inverse-surface transition-colors" data-path="tasaciones" href="#">Tasá tu Propiedad</a><a class="flex items-center gap-space-xs py-1.5 px-space-sm rounded-lg hover:bg-surface-container transition-colors" data-path="portal-clientes" href="#"><span class="hidden lg:flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold">Portal Propietarios</span><span class="font-label-eyebrow text-label-eyebrow text-on-surface-variant">Acceso Clientes</span></span><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ3fOm_MuyUb-he_1pEA8r7jZKftIlVcDussmEu-Ss8zTMBMzRorDOqdZUtMriR2qMmURdsocKUF1PkTXYXV_LGwPyDiI49zFDzKlDWpq1aV0BVboKElV_jd02hMtiZ076duayHEXQ5VR3EKWL1iKP5cu9M5DeUjT9bjWPFbFUqj0HdA2xaVLuPnrn9uFuuf1kagfOOLfQeCQosAoRGel2QlMFw6I66rmvhYgZAW0"/></a></div></div></header><main class="w-full pt-[7.5rem] bg-surface-canvas"><div class="flex flex-col w-full">
+<!-- Sub-header Breadcrumb & Institutional Context -->
+<section class="w-full bg-surface-muted py-space-md">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<nav aria-label="Migas de pan" class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Inicio</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Catálogo Inmobiliario</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-on-surface font-semibold">Propiedades y Oficinas Disponibles</span>
+</nav>
+<div class="flex items-center gap-space-sm text-body-sm font-body-sm text-on-surface-variant">
+<span class="flex items-center gap-1 font-semibold text-status-corporate">
+<span class="w-2 h-2 rounded-full bg-status-corporate inline-block animate-pulse"></span>
+          Actualizado hoy, 09:30 ART
+        </span>
+<span class="text-outline">|</span>
+<span>Auditoría de Dominio &amp; Valuaciones CUCICBA</span>
+</div>
+</div>
+</section>
+<!-- Editorial Section Header -->
+<section class="w-full bg-surface-card pt-space-xl pb-space-lg">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="max-w-3xl space-y-space-xs">
+<span class="font-label-eyebrow text-label-eyebrow tracking-widest text-secondary uppercase font-bold">
+            Asset Management &amp; Transacciones Prime
+          </span>
+<h1 class="font-headline-xl text-headline-xl tracking-tight text-primary leading-tight font-bold">
+            Catálogo de Propiedades &amp; Activos Exclusivos
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            Cartera inmobiliaria seleccionada con tasaciones oficiales certificadas, rentabilidades garantizadas (Yield), contratos institucionales vigentes y certificaciones internacionales LEED.
+          </p>
+</div>
+<!-- Quick Stats Badge Strip -->
+<div class="flex items-center gap-space-md p-space-sm bg-surface-container-low rounded-xl">
+<div class="px-space-sm py-1">
+<span class="block font-headline-md text-headline-md font-bold text-primary">184</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Activos Auditados</span>
+</div>
+<div class="w-px h-10 bg-border-subtle"></div>
+<div class="px-space-sm py-1">
+<span class="block font-headline-md text-headline-md font-bold text-secondary">8.4%</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Yield Máximo</span>
+</div>
+<div class="w-px h-10 bg-border-subtle"></div>
+<div class="px-space-sm py-1">
+<span class="block font-headline-md text-headline-md font-bold text-status-corporate">100%</span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase">Due Diligence OK</span>
+</div>
+</div>
+</div>
+<!-- Segment Tabs -->
+<div class="mt-space-xl flex items-center gap-space-xs overflow-x-auto pb-space-xs scrollbar-none">
+<button class="px-space-lg py-2.5 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg whitespace-nowrap shadow-sm" type="button">
+          Todos los Activos <span class="ml-1 opacity-80">(184)</span>
+</button>
+<button class="px-space-lg py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg whitespace-nowrap transition-colors" type="button">
+          Venta Residencial Prime <span class="ml-1 text-on-surface-variant">(78)</span>
+</button>
+<button class="px-space-lg py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg whitespace-nowrap transition-colors" type="button">
+          Oficinas Corporativas AAA <span class="ml-1 text-on-surface-variant">(42)</span>
+</button>
+<button class="px-space-lg py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg whitespace-nowrap transition-colors" type="button">
+          Parques Logísticos &amp; Docks <span class="ml-1 text-on-surface-variant">(24)</span>
+</button>
+<button class="px-space-lg py-2.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg whitespace-nowrap transition-colors" type="button">
+          Terrenos &amp; Inversión en Pozo <span class="ml-1 text-on-surface-variant">(40)</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive Search & Console Strip -->
+<section class="sticky top-[7.5rem] z-30 w-full bg-surface-card/95 backdrop-blur-md shadow-sm">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-sm">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-space-sm items-center">
+<!-- Filter 1: Typology -->
+<div class="flex flex-col">
+<label class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant mb-1 font-semibold">Tipología</label>
+<select class="w-full h-10 px-space-sm bg-surface-canvas rounded text-body-sm font-body-sm text-on-surface focus:outline-none focus:bg-surface-card">
+<option>Todas las tipologías</option>
+<option>Oficina AAA / Piso Completo</option>
+<option>Penthouse / Semipiso Prime</option>
+<option>Nave Logística / Centro Depósito</option>
+<option>Edificio Corporativo en Block</option>
+<option>Local Comercial Estratégico</option>
+</select>
+</div>
+<!-- Filter 2: Location -->
+<div class="flex flex-col">
+<label class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant mb-1 font-semibold">Ubicación Clave</label>
+<select class="w-full h-10 px-space-sm bg-surface-canvas rounded text-body-sm font-body-sm text-on-surface focus:outline-none focus:bg-surface-card">
+<option>CABA &amp; GBA Norte</option>
+<option>Catalinas / Plaza San Martín</option>
+<option>Puerto Madero Dique 1-4</option>
+<option>Belgrano Chico / Av. Libertador</option>
+<option>Vicente López / Corredor Panamericana</option>
+<option>Tigre / Triángulo Logístico</option>
+</select>
+</div>
+<!-- Filter 3: Price USD -->
+<div class="flex flex-col">
+<label class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant mb-1 font-semibold">Inversión (USD)</label>
+<div class="flex items-center gap-1">
+<input class="w-1/2 h-10 px-space-xs bg-surface-canvas rounded text-body-sm font-body-sm text-on-surface focus:outline-none text-center" placeholder="Min" type="text" value="USD 500K"/>
+<span class="text-outline text-xs">-</span>
+<input class="w-1/2 h-10 px-space-xs bg-surface-canvas rounded text-body-sm font-body-sm text-on-surface focus:outline-none text-center" placeholder="Max" type="text" value="USD 10M+"/>
+</div>
+</div>
+<!-- Filter 4: Area -->
+<div class="flex flex-col">
+<label class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant mb-1 font-semibold">Superficie Total (m²)</label>
+<div class="flex items-center gap-1">
+<input class="w-1/2 h-10 px-space-xs bg-surface-canvas rounded text-body-sm font-body-sm text-on-surface focus:outline-none text-center" placeholder="Desde" type="text" value="300 m²"/>
+<span class="text-outline text-xs">-</span>
+<input class="w-1/2 h-10 px-space-xs bg-surface-canvas rounded text-body-sm font-body-sm text-on-surface focus:outline-none text-center" placeholder="Hasta" type="text" value="10.000+"/>
+</div>
+</div>
+<!-- Filter Checkboxes -->
+<div class="flex flex-col justify-end gap-1.5 pb-1">
+<label class="flex items-center gap-2 cursor-pointer text-body-sm font-body-sm text-on-surface">
+<input checked="" class="accent-secondary w-4 h-4 rounded" type="checkbox"/>
+<span class="font-semibold text-secondary">Renta Inmediata</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer text-body-sm font-body-sm text-on-surface">
+<input checked="" class="accent-primary w-4 h-4 rounded" type="checkbox"/>
+<span>Sustentable / LEED</span>
+</label>
+</div>
+<!-- Primary Action Trigger & Clear -->
+<div class="flex items-center gap-space-xs mt-3 lg:mt-0">
+<button class="flex-1 h-10 bg-primary text-on-primary hover:bg-inverse-surface rounded font-label-md text-label-md font-bold flex items-center justify-center gap-1 shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">search</span>
+<span>Aplicar</span>
+</button>
+<button class="h-10 px-3 bg-surface-container hover:bg-surface-container-high rounded text-on-surface transition-colors flex items-center justify-center" title="Restablecer filtros" type="button">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+</button>
+</div>
+</div>
+<!-- Secondary Sub-bar: Layout Switcher & Sorting Ribbon -->
+<div class="mt-space-sm pt-space-xs flex flex-col sm:flex-row items-center justify-between gap-space-sm text-body-sm font-body-sm">
+<div class="flex items-center gap-space-sm">
+<span class="font-semibold text-primary">Mostrando 184 activos disponibles</span>
+<span class="text-outline hidden md:inline">·</span>
+<span class="text-on-surface-variant hidden md:inline">Transacciones bajo arancel CUCICBA</span>
+</div>
+<div class="flex items-center gap-space-md w-full sm:w-auto justify-between sm:justify-end">
+<!-- View Toggle -->
+<div class="flex items-center bg-surface-container p-0.5 rounded-lg">
+<button class="flex items-center gap-1 px-space-sm py-1.5 rounded-md bg-surface-card text-on-surface font-label-md text-label-md shadow-sm font-semibold" id="viewSplitBtn" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">splitscreen</span>
+<span class="hidden md:inline">Mapa Dividido</span>
+</button>
+<button class="flex items-center gap-1 px-space-sm py-1.5 rounded-md hover:bg-surface-card/60 text-on-surface-variant font-label-md text-label-md transition-colors" id="viewGridBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">grid_view</span>
+<span class="hidden md:inline">Cuadrícula</span>
+</button>
+<button class="flex items-center gap-1 px-space-sm py-1.5 rounded-md hover:bg-surface-card/60 text-on-surface-variant font-label-md text-label-md transition-colors" id="viewListBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">view_agenda</span>
+<span class="hidden md:inline">Lista</span>
+</button>
+</div>
+<!-- Sort Select -->
+<div class="flex items-center gap-2">
+<span class="text-on-surface-variant text-label-md font-label-md hidden lg:inline">Ordenar:</span>
+<select class="h-9 px-space-sm bg-surface-card text-on-surface rounded text-body-sm font-body-sm focus:outline-none">
+<option>Mayor Rentabilidad (CAP Rate)</option>
+<option>Mayor Valor (USD)</option>
+<option>Menor Valor (USD)</option>
+<option>Mayor Superficie (m²)</option>
+<option>Últimos Ingresos Exclusivos</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Split Screen Interactive Layout Section -->
+<section class="w-full bg-surface-canvas py-space-xl">
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start" id="catalogSplitWrapper">
+<!-- LEFT COLUMN: Infinite Property Feed (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg" id="propertyFeedCol">
+<!-- Card 1: Torre Alem Catalinas (Featured Institutional) -->
+<article class="bg-surface-card rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group">
+<div class="relative w-full h-72 md:h-80 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern high-rise corporate office tower exterior in Catalinas Norte Buenos Aires, sleek reflective architectural glass facade, golden sunset light reflecting on structural steel and curtain wall, luxury real estate corporate aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUhsu2AJ426D9ylFfOmAfXad-VifRDhyjnqSc5bnl0WemoJ59_PGX3s_M66box1WTEv-DEasdjUco7HI1u7GkZD9brpD3KYJyUxU_pDl2tQ9vUAl4lNnxGlTzZNU11JEV50KU555ZtP2oBXLsMF5RwM0auLfetXcvCBVcH59Otq7KsUeSKHGd-L5HvRnzQ6IRn5iPzV12wRgCLgJrJUA7YYnemuFHvqfaKGz1HOkE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<!-- Badges Top Left -->
+<div class="absolute top-space-sm left-space-sm flex flex-wrap gap-1.5">
+<span class="bg-status-exclusive text-white font-label-eyebrow text-label-eyebrow uppercase px-2.5 py-1 rounded shadow-sm tracking-wider flex items-center gap-1 font-bold">
+<span class="material-symbols-outlined text-[13px]">verified</span> Exclusividad Giaga
+                </span>
+<span class="bg-surface-card text-primary font-label-eyebrow text-label-eyebrow uppercase px-2.5 py-1 rounded shadow-sm tracking-wider font-bold">
+                  Oficinas AAA
+                </span>
+<span class="bg-emerald-tint text-on-tertiary-fixed-variant font-label-eyebrow text-label-eyebrow uppercase px-2.5 py-1 rounded shadow-sm tracking-wider font-bold">
+                  Yield: 8.2% Anual
+                </span>
+</div>
+<!-- Media Count & Action Top Right -->
+<div class="absolute top-space-sm right-space-sm flex items-center gap-1.5">
+<button class="w-9 h-9 rounded-full bg-surface-card/90 hover:bg-surface-card text-primary flex items-center justify-center backdrop-blur-sm transition-transform active:scale-90 shadow-sm" title="Guardar activo en favoritos" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<span class="bg-primary/80 backdrop-blur-sm text-on-primary font-label-md text-label-md px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span> 1/24
+                </span>
+</div>
+<!-- Price Tag Bottom Left -->
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-end justify-between text-on-primary">
+<div>
+<span class="text-label-md font-label-md text-secondary-fixed uppercase tracking-wider block">Valor de Venta Institucional</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-white tracking-tight">USD 3.250.000</span>
+<span class="text-body-sm font-body-sm text-inverse-on-surface/80">o Alquiler USD 18.000/mes</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-inverse-on-surface/90 block">Valor m²</span>
+<span class="font-label-lg text-label-lg font-semibold text-white">USD 3.869 / m²</span>
+</div>
+</div>
+</div>
+<!-- Card Body Content -->
+<div class="p-space-lg space-y-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-2 text-secondary text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="font-semibold">Av. Leandro N. Alem 1050, Catalinas Norte, Retiro</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary group-hover:text-secondary transition-colors">
+                  Torre Alem Catalinas - Piso Completo Corporativo AAA
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                  Planta libre de alta gama con visuales panorámicas 360° al Río de la Plata y Puerto Madero. Doble vidriado hermético LOW-E, grupo electrógeno al 100%, piso técnico instalado y control de accesos biométrico.
+                </p>
+</div>
+<!-- Key Specs Strip -->
+<div class="grid grid-cols-4 gap-space-xs py-space-sm bg-surface-container-low rounded-lg text-center">
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Superficie</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">840 m²</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Cocheras</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">12 cub.</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Seguridad</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">24 / 7</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Norma LEED</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">Gold</span>
+</div>
+</div>
+<!-- Financial & Tenant Highlights -->
+<div class="flex items-center justify-between p-space-sm bg-surface-muted rounded-lg text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">account_balance</span>
+<span class="text-on-surface">Inquilino actual: <strong>Multinacional IT (Contrato en USD a 5 años)</strong></span>
+</div>
+<span class="text-status-corporate font-semibold text-label-md font-label-md">Renta inmediata</span>
+</div>
+<!-- Action Triggers -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="flex-1 min-w-[160px] h-11 bg-primary text-on-primary hover:bg-inverse-surface rounded font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span>Agendar Visita Privada</span>
+</button>
+<a class="h-11 px-space-md bg-surface-container hover:bg-surface-container-high text-primary rounded font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 transition-colors" href="https://wa.me/541152389900" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+<span>WhatsApp</span>
+</a>
+<button class="h-11 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface rounded font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors" title="Descargar Dossier Ejecutivo PDF" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span class="hidden sm:inline">Dossier PDF</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 2: Penthouse Triplex Belgrano Chico (Luxury Residential) -->
+<article class="bg-surface-card rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group">
+<div class="relative w-full h-72 md:h-80 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Ultra-luxury modern penthouse terrace with private heated infinity pool overlooking the river in Belgrano Chico Buenos Aires, architectural travertine marble, floor to ceiling windows, dusk ambiance with warm interior lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz9VvobMwlWG9nvIQ4gkcfD1pFflGWA3oOvLpKSEn9ZRUkVX6oduerM58xU7bD6AZQgs_Xb5JxUN0syi9qLlLaVfsNTnSooZAlJYczPf9JPHg3HyLz4ZkA7OH3CqHPKhDqoiALpAx0yJQiSnO7xmJaHOai5f7xltwh0t26S9oIT0UHrNMud7Ea3dSBtaZWUrdfEHcStXSqb21IeKFQmZMlyzQP5k0EAVu_Jq_iyUU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm flex flex-wrap gap-1.5">
+<span class="bg-primary text-white font-label-eyebrow text-label-eyebrow uppercase px-2.5 py-1 rounded shadow-sm tracking-wider font-bold">
+                  Residencial Prime
+                </span>
+<span class="bg-secondary-fixed text-on-secondary-fixed font-label-eyebrow text-label-eyebrow uppercase px-2.5 py-1 rounded shadow-sm tracking-wider font-bold">
+                  Piscina Climatizada Propia
+                </span>
+</div>
+<div class="absolute top-space-sm right-space-sm flex items-center gap-1.5">
+<button class="w-9 h-9 rounded-full bg-surface-card/90 hover:bg-surface-card text-primary flex items-center justify-center backdrop-blur-sm transition-transform active:scale-90 shadow-sm" title="Guardar activo en favoritos" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<span class="bg-primary/80 backdrop-blur-sm text-on-primary font-label-md text-label-md px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span> 1/32
+                </span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-end justify-between text-on-primary">
+<div>
+<span class="text-label-md font-label-md text-secondary-fixed uppercase tracking-wider block">Venta Exclusiva</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-white tracking-tight">USD 2.180.000</span>
+<span class="text-body-sm font-body-sm text-inverse-on-surface/80">Exp: ARS 340.000</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-inverse-on-surface/90 block">Valor m²</span>
+<span class="font-label-lg text-label-lg font-semibold text-white">USD 4.192 / m²</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg space-y-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-2 text-secondary text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="font-semibold">Av. del Libertador 4400, Belgrano Chico / Bosques de Palermo</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary group-hover:text-secondary transition-colors">
+                  Penthouse Triplex con Piscina Climatizada &amp; Terraza Privada
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                  Imponente triplex con vista abierta a los Bosques de Palermo y al Río. 4 master suites, master suite principal con doble vestidor Armani/Casa, ascensor interno privado Schindler, spa y cava climatizada para 500 botellas.
+                </p>
+</div>
+<div class="grid grid-cols-4 gap-space-xs py-space-sm bg-surface-container-low rounded-lg text-center">
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Superficie</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">520 m²</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Suites</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">4 en suite</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Cocheras</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">4 fijas</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Amenities</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">Full Club</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="flex-1 min-w-[160px] h-11 bg-primary text-on-primary hover:bg-inverse-surface rounded font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span>Agendar Visita Privada</span>
+</button>
+<a class="h-11 px-space-md bg-surface-container hover:bg-surface-container-high text-primary rounded font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 transition-colors" href="https://wa.me/541152389900" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+<span>WhatsApp</span>
+</a>
+<button class="h-11 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface rounded font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors" title="Descargar Dossier Ejecutivo PDF" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span class="hidden sm:inline">Dossier PDF</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 3: Nave Logística Tigre Panamericana -->
+<article class="bg-surface-card rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group">
+<div class="relative w-full h-72 md:h-80 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Expansive modern logistics park distribution center warehouse along Panamericana Highway in Buenos Aires, high ceilings, multiple loading docks with hydraulic levelers, wide maneuver yards and LED high-bay lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBRDZqs38u2b2X610XhbFOoEjhpy9IwkKe1pDnUwgkWgd0Crt-272gfJ4bjAtbrhG76UAoCMwSsfRiERzT7C3BCECg1NybvaZkv_l-ol4FN8XEcaB1hLE4Nih8BZRjwEtK1I8K53VzRc5MBB84C7deTmi5uLmrm-bTnM2_FuIlkmhugFKLcyfjrl9JNx0ZXtcRtwF7WfzkhcKhkSDRmP_nQE3xyksY84pZPPk4ArQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm flex flex-wrap gap-1.5">
+<span class="bg-status-corporate text-white font-label-eyebrow text-label-eyebrow uppercase px-2.5 py-1 rounded shadow-sm tracking-wider font-bold">
+                  Logística &amp; Industria
+                </span>
+<span class="bg-surface-card text-primary font-label-eyebrow text-label-eyebrow uppercase px-2.5 py-1 rounded shadow-sm tracking-wider font-bold">
+                  10 Docks Niveladores
+                </span>
+</div>
+<div class="absolute top-space-sm right-space-sm flex items-center gap-1.5">
+<button class="w-9 h-9 rounded-full bg-surface-card/90 hover:bg-surface-card text-primary flex items-center justify-center backdrop-blur-sm transition-transform active:scale-90 shadow-sm" title="Guardar activo en favoritos" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<span class="bg-primary/80 backdrop-blur-sm text-on-primary font-label-md text-label-md px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span> 1/18
+                </span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-end justify-between text-on-primary">
+<div>
+<span class="text-label-md font-label-md text-secondary-fixed uppercase tracking-wider block">Alquiler Corporativo Mensual</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-white tracking-tight">USD 44.800 / mes</span>
+<span class="text-body-sm font-body-sm text-inverse-on-surface/80">+ Expensas Parque</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-inverse-on-surface/90 block">Canon / m²</span>
+<span class="font-label-lg text-label-lg font-semibold text-white">USD 7.00 / m²</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg space-y-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-2 text-secondary text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="font-semibold">Autopista Panamericana Km 34.5, Triángulo Logístico Tigre</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary group-hover:text-secondary transition-colors">
+                  Nave Logística e Industrial Panamericana - Parque Cerrado AAA
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                  Estructura metálica de alma llena, altura libre de 12.50 metros bajo viga, piso de hormigón pulido H30 de alta resistencia (6 tn/m²), red de rociadores ESFR bajo normas NFPA y garita de seguridad con control de camiones.
+                </p>
+</div>
+<div class="grid grid-cols-4 gap-space-xs py-space-sm bg-surface-container-low rounded-lg text-center">
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Sup. Cubierta</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">6.400 m²</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Altura Libre</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">12.5 m</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Dársenas</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">10 Docks</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Playa Maniobra</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">3.800 m²</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="flex-1 min-w-[160px] h-11 bg-primary text-on-primary hover:bg-inverse-surface rounded font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span>Coordinar Visita Técnica</span>
+</button>
+<a class="h-11 px-space-md bg-surface-container hover:bg-surface-container-high text-primary rounded font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 transition-colors" href="https://wa.me/541152389900" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+<span>WhatsApp</span>
+</a>
+<button class="h-11 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface rounded font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors" title="Descargar Dossier Ejecutivo PDF" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span class="hidden sm:inline">Dossier PDF</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 4: Edificio Corporativo Vicente López -->
+<article class="bg-surface-card rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group">
+<div class="relative w-full h-72 md:h-80 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Modern standalone corporate boutique office building in Vicente Lopez along the northern corridor of Buenos Aires, curved glass facade, green eco-terrace on roof, high-end landscaping and secure driveway" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3_RyJnFWknMgBkpIsE8tkCGOnOnwai6T4ZJl389W40HHze7HQeJI-PrVV57y5-dwhnQFp3k2-cQtcjEn2WtPtuAnUHgaQw4_YNbN2iEjKMa9Rb4YLMbRVDlDI4lqbBmJbl40uUAEPXkAQapWjNil_dJ0VNXuqyV2GE1hsCO3mqPjTUAZ9QeAXVumcPLOCGAo-EtNairISrOQ7ll1ShTAO-8olcUzFfoDqqvCxTSQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm flex flex-wrap gap-1.5">
+<span class="bg-primary text-white font-label-eyebrow text-label-eyebrow uppercase px-2.5 py-1 rounded shadow-sm tracking-wider font-bold">
+                  Venta en Block
+                </span>
+<span class="bg-emerald-tint text-on-tertiary-fixed-variant font-label-eyebrow text-label-eyebrow uppercase px-2.5 py-1 rounded shadow-sm tracking-wider font-bold">
+                  Certificación LEED Gold
+                </span>
+</div>
+<div class="absolute top-space-sm right-space-sm flex items-center gap-1.5">
+<button class="w-9 h-9 rounded-full bg-surface-card/90 hover:bg-surface-card text-primary flex items-center justify-center backdrop-blur-sm transition-transform active:scale-90 shadow-sm" title="Guardar activo en favoritos" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<span class="bg-primary/80 backdrop-blur-sm text-on-primary font-label-md text-label-md px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span> 1/20
+                </span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-end justify-between text-on-primary">
+<div>
+<span class="text-label-md font-label-md text-secondary-fixed uppercase tracking-wider block">Inversión Institucional Block Completo</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-white tracking-tight">USD 4.900.000</span>
+<span class="text-body-sm font-body-sm text-inverse-on-surface/80">Sede Corporativa Total</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-inverse-on-surface/90 block">Valor m²</span>
+<span class="font-label-lg text-label-lg font-semibold text-white">USD 3.062 / m²</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg space-y-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-2 text-secondary text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="font-semibold">Av. del Libertador al 100, Vicente López / Nodo Al Río</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary group-hover:text-secondary transition-colors">
+                  Edificio Corporativo Boutique en Block - Corredor Norte
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                  Inmueble corporativo exento e independiente compuesto por PB más 4 plantas libres y rooftop verde acondicionado para eventos de directorio. Subsuelo técnico con cocheras dobles y sala de servidores Tier II.
+                </p>
+</div>
+<div class="grid grid-cols-4 gap-space-xs py-space-sm bg-surface-container-low rounded-lg text-center">
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Superficie</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">1.600 m²</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Plantas</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">PB + 4</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Cocheras</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">22 autos</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Rooftop</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">Privado</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="flex-1 min-w-[160px] h-11 bg-primary text-on-primary hover:bg-inverse-surface rounded font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span>Agendar Visita Institucional</span>
+</button>
+<a class="h-11 px-space-md bg-surface-container hover:bg-surface-container-high text-primary rounded font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 transition-colors" href="https://wa.me/541152389900" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+<span>WhatsApp</span>
+</a>
+<button class="h-11 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface rounded font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors" title="Descargar Dossier Ejecutivo PDF" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span class="hidden sm:inline">Dossier PDF</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 5: Torre Alvear Puerto Madero -->
+<article class="bg-surface-card rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group">
+<div class="relative w-full h-72 md:h-80 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High luxury residential living room in Puerto Madero skyscraper tower overlooking the Rio de la Plata river in Buenos Aires, custom Italian contemporary furniture, oak chevron floors, floor-to-ceiling glass panoramic wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3L0XoKEeAc5izJow0m-OhmNIoeWtq51i62EqaBO7f--Au4ioUQQSWZ4FoUZXf6YdXgY6TO4Y9nmHaAG3rmeBp35curhtAwJ7IAoihaVqAQWpdd3N3ZECtI--pV7cVzSRyJNw_2O83nLY7ivFhjaT6o_3B2lHRkB0JwqkziJdX1NyiGifm39C7i17XpAiSx3lO2qpQw7fr_ccugfUU8ixo50Nzn1gqG773OeIOHME"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm flex flex-wrap gap-1.5">
+<span class="bg-primary text-white font-label-eyebrow text-label-eyebrow uppercase px-2.5 py-1 rounded shadow-sm tracking-wider font-bold">
+                  Residencial de Colección
+                </span>
+<span class="bg-surface-card text-primary font-label-eyebrow text-label-eyebrow uppercase px-2.5 py-1 rounded shadow-sm tracking-wider font-bold">
+                  Vista Abierta al Río
+                </span>
+</div>
+<div class="absolute top-space-sm right-space-sm flex items-center gap-1.5">
+<button class="w-9 h-9 rounded-full bg-surface-card/90 hover:bg-surface-card text-primary flex items-center justify-center backdrop-blur-sm transition-transform active:scale-90 shadow-sm" title="Guardar activo en favoritos" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<span class="bg-primary/80 backdrop-blur-sm text-on-primary font-label-md text-label-md px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span> 1/28
+                </span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-end justify-between text-on-primary">
+<div>
+<span class="text-label-md font-label-md text-secondary-fixed uppercase tracking-wider block">Venta Directa</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-white tracking-tight">USD 1.850.000</span>
+<span class="text-body-sm font-body-sm text-inverse-on-surface/80">Piso 42 Panorámico</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-inverse-on-surface/90 block">Valor m²</span>
+<span class="font-label-lg text-label-lg font-semibold text-white">USD 5.967 / m²</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg space-y-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-2 text-secondary text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="font-semibold">Boulevard Azucena Villaflor 559, Dique 2, Puerto Madero</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary group-hover:text-secondary transition-colors">
+                  Piso de Alta Categoría en Torre Alvear Tower
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                  Excepcional departamento en el rascacielos más prestigioso de Sudamérica. Altura de techos de 3.30 metros libres, mármoles importados Calacatta en baños, sistema integral de domótica Lutron y amenidades de categoría hotel 5 estrellas.
+                </p>
+</div>
+<div class="grid grid-cols-4 gap-space-xs py-space-sm bg-surface-container-low rounded-lg text-center">
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Superficie</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">310 m²</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Dormitorios</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">3 en suite</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Cocheras</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">3 fijas</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Piso</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">42</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="flex-1 min-w-[160px] h-11 bg-primary text-on-primary hover:bg-inverse-surface rounded font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span>
+<span>Agendar Visita Privada</span>
+</button>
+<a class="h-11 px-space-md bg-surface-container hover:bg-surface-container-high text-primary rounded font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 transition-colors" href="https://wa.me/541152389900" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+<span>WhatsApp</span>
+</a>
+<button class="h-11 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface rounded font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors" title="Descargar Dossier Ejecutivo PDF" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span class="hidden sm:inline">Dossier PDF</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Card 6: Local Comercial Recoleta Renta Activa -->
+<article class="bg-surface-card rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group">
+<div class="relative w-full h-72 md:h-80 overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High-end flagship retail store on corner of prestigious Recoleta avenue in Buenos Aires, large glass display windows, stone cladding, prime commercial location with luxury pedestrian footfall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9x4V7OP9zVrsRiugb0QkbMC2CpO39Fe9Nip6tmXz4-7wZgUvT32iSSRw5GBO5nbKo6BIuXXr13DOloW4CwINUEpdJk71W8YTqxca1OwGbP9vasxgCFr4Ea47DSVIIlkzB4ei3cLjoSKg3gdqsqEjAW668Qx2ZlGsvQ52XvFjhdpVnnLClv_5V_gqr1_-j2eRKFh-4M4VaQBnpwlukPNOq7BXETyltd63dVsVYUtk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute top-space-sm left-space-sm flex flex-wrap gap-1.5">
+<span class="bg-secondary text-white font-label-eyebrow text-label-eyebrow uppercase px-2.5 py-1 rounded shadow-sm tracking-wider font-bold">
+                  Retail Institucional
+                </span>
+<span class="bg-emerald-tint text-on-tertiary-fixed-variant font-label-eyebrow text-label-eyebrow uppercase px-2.5 py-1 rounded shadow-sm tracking-wider font-bold">
+                  Yield: 7.8% Anual Neto USD
+                </span>
+</div>
+<div class="absolute top-space-sm right-space-sm flex items-center gap-1.5">
+<button class="w-9 h-9 rounded-full bg-surface-card/90 hover:bg-surface-card text-primary flex items-center justify-center backdrop-blur-sm transition-transform active:scale-90 shadow-sm" title="Guardar activo en favoritos" type="button">
+<span class="material-symbols-outlined text-[18px]">bookmark_border</span>
+</button>
+<span class="bg-primary/80 backdrop-blur-sm text-on-primary font-label-md text-label-md px-2.5 py-1 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">photo_camera</span> 1/14
+                </span>
+</div>
+<div class="absolute bottom-space-sm left-space-sm right-space-sm flex items-end justify-between text-on-primary">
+<div>
+<span class="text-label-md font-label-md text-secondary-fixed uppercase tracking-wider block">Inversión con Renta Activa</span>
+<div class="flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg font-bold text-white tracking-tight">USD 1.250.000</span>
+<span class="text-body-sm font-body-sm text-inverse-on-surface/80">Renta USD 8.125 / mes</span>
+</div>
+</div>
+<div class="text-right">
+<span class="font-label-eyebrow text-label-eyebrow uppercase text-inverse-on-surface/90 block">Valor m²</span>
+<span class="font-label-lg text-label-lg font-semibold text-white">USD 2.777 / m²</span>
+</div>
+</div>
+</div>
+<div class="p-space-lg space-y-space-md">
+<div class="space-y-1">
+<div class="flex items-center gap-2 text-secondary text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span class="font-semibold">Av. Alvear esq. Ayacucho, Recoleta</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary group-hover:text-secondary transition-colors">
+                  Local Comercial en Esquina Estratégica con Inquilino Multinacional
+                </h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+                  Impresionante vidriera de 28 metros de frente sobre la avenida más exclusiva de la ciudad. Contrato corporativo en dólares con garantía internacional indexado anualmente, con vencimiento en 2031.
+                </p>
+</div>
+<div class="grid grid-cols-4 gap-space-xs py-space-sm bg-surface-container-low rounded-lg text-center">
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Superficie</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">450 m²</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Vidriera</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">28 m lin.</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Niveles</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">PB + SS</span>
+</div>
+<div class="p-1">
+<span class="font-label-md text-label-md text-on-surface-variant block uppercase text-[10px]">Contrato</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">Hasta 2031</span>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="flex-1 min-w-[160px] h-11 bg-primary text-on-primary hover:bg-inverse-surface rounded font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+<span>Consultar Informe de Renta</span>
+</button>
+<a class="h-11 px-space-md bg-surface-container hover:bg-surface-container-high text-primary rounded font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 transition-colors" href="https://wa.me/541152389900" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-secondary">chat</span>
+<span>WhatsApp</span>
+</a>
+<button class="h-11 px-space-md bg-surface-container hover:bg-surface-container-high text-on-surface rounded font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors" title="Descargar Dossier Ejecutivo PDF" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span class="hidden sm:inline">Dossier PDF</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+<!-- RIGHT COLUMN: Sticky Architectural Cartographic Map (5 Cols) -->
+<div class="lg:col-span-5 hidden lg:block sticky top-[13.5rem] h-[calc(100vh-14.5rem)] rounded-xl overflow-hidden shadow-xl bg-surface-muted relative" id="stickyMapCol">
+<!-- Static Architectural Base Cartography -->
+<div class="w-full h-full bg-cover bg-center" data-location="Buenos Aires, Argentina" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAao_YmM8cTVbsWQ0mX6K2Xs_N1H9pnyeKloOi9YZiq6lF2RVDD4gqpxp_SwhzqfgsWShr90wKhO-LVWRn-O4iLHxYTblhOC_SZDWm-IaLUVxDo2No5cN234OfxSe20vFvHYzHyk0a2PmfmJXagCQz7Qb-QnyWOb8IMuY4kIPydxuzmhUkKS5pW0nxrg6dT_XJCXPvDgw-hZ7irxeRfztpFb-yzEae4b7pbwMvTLus')"></div>
+<!-- Subtle Scrim / Contrast Veil -->
+<div class="absolute inset-0 bg-primary/10 pointer-events-none"></div>
+<!-- Top Map Navigation & Zone Controls -->
+<div class="absolute top-space-md left-space-md right-space-md flex flex-col gap-space-xs pointer-events-auto">
+<!-- Zone Fast Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
+<button class="px-2.5 py-1.5 rounded-full bg-surface-card/95 hover:bg-surface-card text-primary font-label-md text-label-md shadow-sm font-semibold whitespace-nowrap" type="button">
+                Todas las Zonas
+              </button>
+<button class="px-2.5 py-1.5 rounded-full bg-primary/90 text-on-primary font-label-md text-label-md shadow-sm font-semibold whitespace-nowrap" type="button">
+                Catalinas &amp; Retiro
+              </button>
+<button class="px-2.5 py-1.5 rounded-full bg-surface-card/95 hover:bg-surface-card text-on-surface font-label-md text-label-md shadow-sm whitespace-nowrap" type="button">
+                Puerto Madero
+              </button>
+<button class="px-2.5 py-1.5 rounded-full bg-surface-card/95 hover:bg-surface-card text-on-surface font-label-md text-label-md shadow-sm whitespace-nowrap" type="button">
+                Belgrano &amp; Norte
+              </button>
+<button class="px-2.5 py-1.5 rounded-full bg-surface-card/95 hover:bg-surface-card text-on-surface font-label-md text-label-md shadow-sm whitespace-nowrap" type="button">
+                Parques Logísticos
+              </button>
+</div>
+<!-- Search as I Move Map Toggle -->
+<div class="self-center bg-surface-card/95 backdrop-blur-md px-3 py-1 rounded-full shadow-md flex items-center gap-2">
+<input checked="" class="accent-secondary w-3.5 h-3.5 rounded" id="moveSearch" type="checkbox"/>
+<label class="font-label-md text-label-md text-on-surface font-semibold cursor-pointer" for="moveSearch">
+                Actualizar al desplazar el mapa
+              </label>
+</div>
+</div>
+<!-- Floating Architectural Price Pins (Simulated Geolocations) -->
+<!-- Pin 1: Torre Alem (Selected state) -->
+<div class="absolute top-[38%] left-[54%] transform -translate-x-1/2 -translate-y-1/2 z-20 cursor-pointer group">
+<div class="relative">
+<div class="px-2.5 py-1 rounded-full bg-primary text-white font-label-md text-label-md font-bold shadow-xl flex items-center gap-1 ring-2 ring-secondary scale-110">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary inline-block"></span>
+<span>$3.25M</span>
+</div>
+<div class="w-2.5 h-2.5 bg-primary transform rotate-45 mx-auto -mt-1 ring-2 ring-secondary"></div>
+</div>
+<!-- Selected Active Asset Popup Preview -->
+<div class="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-3 w-64 bg-surface-card rounded-lg shadow-2xl p-space-sm z-30 transition-all duration-200">
+<div class="relative w-full h-24 rounded overflow-hidden mb-2">
+<img class="w-full h-full object-cover" data-alt="High angle shot of modern Alem Catalinas office tower in Buenos Aires financial center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6xDIGyS0AhVA2ATtKu-Rt6gonG2kMnWej4NQezJ4koNbpjCalVsoLh0lnBUwjCzfHCmr0iKBSGlMH44FSOLEDye4IglwG9GBCItOv9J_668k27Z1kp7-UwpXXatShMxCv1VqQloNl6Dje8B__LB1BesTXOLmHiZsuJM9hg0SzyC_ENvvsn1nqcYeS85Sn8alWP8BI17rhAYzMpP0DfhWtNhAxKeVOF58HLCRKrdc"/>
+<span class="absolute top-1 left-1 bg-primary text-white text-[9px] font-bold uppercase px-1.5 py-0.5 rounded">Oficina AAA</span>
+</div>
+<h4 class="font-headline-sm text-[14px] leading-tight font-bold text-primary line-clamp-1">Torre Alem Catalinas - Piso 840 m²</h4>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Catalinas Norte, Retiro</p>
+<div class="mt-2 pt-2 border-t border-border-subtle flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-label-lg font-bold text-primary">USD 3.25M</span>
+<span class="block text-[10px] text-secondary font-semibold">Yield 8.2%</span>
+</div>
+<button class="px-2.5 py-1 bg-primary text-on-primary text-[11px] font-bold rounded hover:bg-inverse-surface transition-colors" type="button">
+                  Ver Ficha
+                </button>
+</div>
+</div>
+</div>
+<!-- Pin 2: Penthouse Belgrano -->
+<div class="absolute top-[22%] left-[34%] transform -translate-x-1/2 -translate-y-1/2 z-10 cursor-pointer hover:scale-110 transition-transform">
+<div class="px-2.5 py-1 rounded-full bg-surface-card hover:bg-primary text-primary hover:text-white font-label-md text-label-md font-bold shadow-lg flex items-center gap-1 transition-colors">
+<span>$2.18M</span>
+</div>
+<div class="w-2 h-2 bg-surface-card transform rotate-45 mx-auto -mt-1"></div>
+</div>
+<!-- Pin 3: Nave Logística Tigre -->
+<div class="absolute top-[12%] left-[18%] transform -translate-x-1/2 -translate-y-1/2 z-10 cursor-pointer hover:scale-110 transition-transform">
+<div class="px-2.5 py-1 rounded-full bg-surface-card hover:bg-primary text-primary hover:text-white font-label-md text-label-md font-bold shadow-lg flex items-center gap-1 transition-colors">
+<span class="text-status-corporate">●</span>
+<span>$44.8K/m</span>
+</div>
+<div class="w-2 h-2 bg-surface-card transform rotate-45 mx-auto -mt-1"></div>
+</div>
+<!-- Pin 4: Edificio Vicente López -->
+<div class="absolute top-[18%] left-[26%] transform -translate-x-1/2 -translate-y-1/2 z-10 cursor-pointer hover:scale-110 transition-transform">
+<div class="px-2.5 py-1 rounded-full bg-surface-card hover:bg-primary text-primary hover:text-white font-label-md text-label-md font-bold shadow-lg flex items-center gap-1 transition-colors">
+<span>$4.90M</span>
+</div>
+<div class="w-2 h-2 bg-surface-card transform rotate-45 mx-auto -mt-1"></div>
+</div>
+<!-- Pin 5: Alvear Puerto Madero -->
+<div class="absolute top-[48%] left-[62%] transform -translate-x-1/2 -translate-y-1/2 z-10 cursor-pointer hover:scale-110 transition-transform">
+<div class="px-2.5 py-1 rounded-full bg-surface-card hover:bg-primary text-primary hover:text-white font-label-md text-label-md font-bold shadow-lg flex items-center gap-1 transition-colors">
+<span>$1.85M</span>
+</div>
+<div class="w-2 h-2 bg-surface-card transform rotate-45 mx-auto -mt-1"></div>
+</div>
+<!-- Pin 6: Local Recoleta -->
+<div class="absolute top-[32%] left-[46%] transform -translate-x-1/2 -translate-y-1/2 z-10 cursor-pointer hover:scale-110 transition-transform">
+<div class="px-2.5 py-1 rounded-full bg-surface-card hover:bg-primary text-primary hover:text-white font-label-md text-label-md font-bold shadow-lg flex items-center gap-1 transition-colors">
+<span class="text-secondary">●</span>
+<span>$1.25M</span>
+</div>
+<div class="w-2 h-2 bg-surface-card transform rotate-45 mx-auto -mt-1"></div>
+</div>
+<!-- Map Bottom Controls & Layer Switcher -->
+<div class="absolute bottom-space-md right-space-md flex flex-col items-end gap-2">
+<!-- Layers Toggle Menu -->
+<div class="bg-surface-card/95 backdrop-blur-md rounded-lg shadow-md p-1 flex items-center gap-1">
+<button class="px-2.5 py-1 text-label-md font-label-md rounded bg-primary text-on-primary font-semibold" type="button">
+                Corredores
+              </button>
+<button class="px-2.5 py-1 text-label-md font-label-md rounded text-on-surface hover:bg-surface-container transition-colors" type="button">
+                Satélite
+              </button>
+<button class="px-2.5 py-1 text-label-md font-label-md rounded text-on-surface hover:bg-surface-container transition-colors" type="button">
+                Plano Urbano
+              </button>
+</div>
+<!-- Zoom Controls -->
+<div class="flex flex-col bg-surface-card rounded-lg shadow-md overflow-hidden">
+<button class="w-9 h-9 flex items-center justify-center hover:bg-surface-container text-on-surface transition-colors" title="Aumentar zoom" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<div class="w-full h-px bg-border-subtle"></div>
+<button class="w-9 h-9 flex items-center justify-center hover:bg-surface-container text-on-surface transition-colors" title="Disminuir zoom" type="button">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+</div>
+</div>
+<!-- Bottom Left Map Legal & Scale -->
+<div class="absolute bottom-space-md left-space-md bg-surface-card/80 backdrop-blur-sm px-2.5 py-1 rounded text-[10px] text-on-surface-variant flex items-center gap-2">
+<span>Giaga GeoCartography Engine</span>
+<span>·</span>
+<span>Escala 1:25.000</span>
+</div>
+</div>
+</div>
+<!-- Pagination Strip -->
+<div class="mt-space-2xl pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<span class="text-body-sm font-body-sm text-on-surface-variant">
+          Página <strong>1</strong> de <strong>12</strong> (Mostrando 6 de 184 activos totales)
+        </span>
+<div class="flex items-center gap-1">
+<button class="w-10 h-10 rounded bg-surface-container text-outline flex items-center justify-center cursor-not-allowed" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-10 h-10 rounded bg-primary text-on-primary font-label-md text-label-md font-bold flex items-center justify-center shadow-sm" type="button">
+            1
+          </button>
+<button class="w-10 h-10 rounded bg-surface-card hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center transition-colors" type="button">
+            2
+          </button>
+<button class="w-10 h-10 rounded bg-surface-card hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center transition-colors" type="button">
+            3
+          </button>
+<span class="px-2 text-outline font-bold">...</span>
+<button class="w-10 h-10 rounded bg-surface-card hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center transition-colors" type="button">
+            12
+          </button>
+<button class="w-10 h-10 rounded bg-surface-card hover:bg-surface-container text-on-surface flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Confidential Off-Market Search Banner -->
+<section class="w-full bg-primary text-on-primary py-space-3xl relative overflow-hidden">
+<!-- Ambient Graphic Geometric Lines -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+<line stroke="currentColor" stroke-width="1.5" x1="0" x2="1200" y1="400" y2="0"></line>
+<line stroke="currentColor" stroke-width="1.5" x1="200" x2="1200" y1="400" y2="100"></line>
+<line stroke="currentColor" stroke-width="1.5" x1="0" x2="800" y1="200" y2="0"></line>
+</svg>
+</div>
+<div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop relative z-10">
+<div class="bg-primary-container p-space-2xl rounded-2xl shadow-2xl flex flex-col lg:flex-row items-center justify-between gap-space-2xl">
+<div class="max-w-2xl space-y-space-sm text-center lg:text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary/20 text-secondary-fixed text-label-eyebrow font-label-eyebrow tracking-widest uppercase font-bold">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+            Servicio Exclusivo Private Advisory
+          </div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-white leading-tight">
+            ¿No encontró el activo estratégico que su corporación requiere?
+          </h2>
+<p class="font-body-lg text-body-lg text-on-primary-container leading-relaxed">
+            Más del 40% de nuestras transacciones de oficinas AAA, activos de renta y predios logísticos se gestionan bajo estricto acuerdo de confidencialidad (Off-Market). Active un mandato de búsqueda a medida con nuestro comité directivo.
+          </p>
+</div>
+<div class="flex flex-col sm:flex-row items-center gap-space-md w-full lg:w-auto">
+<button class="w-full sm:w-auto h-12 px-space-xl bg-secondary text-on-secondary hover:bg-gold-hover rounded font-label-lg text-label-lg font-bold transition-all shadow-lg flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+<span>Solicitar Mandato Personalizado</span>
+</button>
+<a class="w-full sm:w-auto h-12 px-space-lg bg-surface-card/10 hover:bg-surface-card/20 text-white rounded font-label-lg text-label-lg font-semibold transition-colors flex items-center justify-center gap-2 backdrop-blur-sm" href="https://wa.me/541152389900" target="_blank">
+<span class="material-symbols-outlined text-[20px] text-secondary-fixed">phone_in_talk</span>
+<span>Línea Confidencial</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive DOM Controller Script (Split / Grid / List view toggling) -->
+<script>
+    (function() {
+      const splitBtn = document.getElementById('viewSplitBtn');
+      const gridBtn = document.getElementById('viewGridBtn');
+      const listBtn = document.getElementById('viewListBtn');
+      const wrapper = document.getElementById('catalogSplitWrapper');
+      const feedCol = document.getElementById('propertyFeedCol');
+      const mapCol = document.getElementById('stickyMapCol');
+
+      if (!splitBtn || !gridBtn || !listBtn || !wrapper || !feedCol || !mapCol) return;
+
+      function resetButtons() {
+        [splitBtn, gridBtn, listBtn].forEach(b => {
+          b.classList.remove('bg-surface-card', 'shadow-sm', 'font-semibold', 'text-on-surface');
+          b.classList.add('text-on-surface-variant');
+        });
+      }
+
+      splitBtn.addEventListener('click', () => {
+        resetButtons();
+        splitBtn.classList.add('bg-surface-card', 'shadow-sm', 'font-semibold', 'text-on-surface');
+        splitBtn.classList.remove('text-on-surface-variant');
+        
+        wrapper.className = 'grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start';
+        feedCol.className = 'lg:col-span-7 flex flex-col gap-space-lg';
+        mapCol.classList.remove('hidden');
+      });
+
+      gridBtn.addEventListener('click', () => {
+        resetButtons();
+        gridBtn.classList.add('bg-surface-card', 'shadow-sm', 'font-semibold', 'text-on-surface');
+        gridBtn.classList.remove('text-on-surface-variant');
+
+        wrapper.className = 'w-full';
+        feedCol.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg';
+        mapCol.classList.add('hidden');
+      });
+
+      listBtn.addEventListener('click', () => {
+        resetButtons();
+        listBtn.classList.add('bg-surface-card', 'shadow-sm', 'font-semibold', 'text-on-surface');
+        listBtn.classList.remove('text-on-surface-variant');
+
+        wrapper.className = 'w-full max-w-4xl mx-auto';
+        feedCol.className = 'flex flex-col gap-space-lg';
+        mapCol.classList.add('hidden');
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-primary text-on-primary pt-space-3xl pb-space-2xl"><div class="max-w-[1380px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-2xl pb-space-2xl"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="Giaga Inmobiliaria Logo" class="h-8 w-auto object-contain brightness-0 invert" src="https://lh3.googleusercontent.com/aida/AEtjO1VlXbsBg9QNl_opb-gKqgE_hYeTMpczdAinh43X3DTLMep_cvk7o4ptZegJDDjaK1cFVJL_U40O91LU3Q9e9OiSoKBpI9FO19w18nwMfKWgnk6OrSzWSz457JfA0ewoD_JUg4CcZ3UT2TnDe8HYbz1Qxkn_wAqeq-FCMZf7qLLZBAM3n-OmwxgKrYQsEKY84bm7k16OPZNkmL4DqCT9RuG2lp1hHw7NiNS8g5Ec27jm"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-on-primary font-bold">GIAGA</span><span class="font-label-eyebrow text-label-eyebrow text-secondary-fixed tracking-widest uppercase">Real Estate &amp; Corporate Advisory</span></div></div><p class="font-body-md text-body-md text-on-primary-container max-w-md">Liderando transacciones de alto perfil, oficinas corporativas AAA, desarrollos multifamiliares y mandatos exclusivos en Argentina y el Cono Sur.</p><div class="flex flex-col gap-space-xs text-body-sm font-body-sm text-secondary-fixed"><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">domain</span> Colegiatura CUCICBA Matrícula Nº 6842 | CMCPSI Matrícula Nº 5920</p><p class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">schedule</span> Lunes a Viernes de 09:00 a 19:00 hs | Sábados 10:00 a 13:00 hs</p></div></div><div class="space-y-space-md"><h4 class="font-label-lg text-label-lg text-on-primary uppercase tracking-wider font-bold">Unidades de Negocio</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-primary-container"><li><a class="hover:text-secondary-fixed transition-colors" data-path="propiedades" href="#">Propiedades Residenciales Prime</a></li><li><a class="hover:text-secondary-fixed transition-colors" data-path="corporativo" href="#">Edificios y Oficinas AAA</a></li><li><a class="hover:text-secondary-fixed transition-colors" data-path="propiedades" href="#">Centros Logísticos e Industriales</a></li><li><a class="hover:text-secondary-fixed transition-colors" data-path="inversiones" href="#">Estructuración de Fondos &amp; Fideicomisos</a></li><li><a class="hover:text-secondary-fixed transition-colors" data-path="tasaciones" href="#">Tasaciones Judiciales &amp; Corporativas</a></li></ul></div><div class="space-y-space-md"><h4 class="font-label-lg text-label-lg text-on-primary uppercase tracking-wider font-bold">Sedes &amp; Sucursales</h4><div class="space-y-space-sm font-body-sm text-body-sm text-on-primary-container"><div><p class="font-label-md text-label-md text-on-primary font-semibold">Distrito Financiero Central (Catalinas)</p><p>Av. Leandro N. Alem 855, Piso 18, CABA</p></div><div><p class="font-label-md text-label-md text-on-primary font-semibold">Hub Corporativo Libertador</p><p>Av. del Libertador 6250, Belgrano, CABA</p></div><div><p class="font-label-md text-label-md text-on-primary font-semibold">Zona Norte Exclusive</p><p>Av. del Libertador 14200, Martínez, PBA</p></div></div></div><div class="space-y-space-md"><h4 class="font-label-lg text-label-lg text-on-primary uppercase tracking-wider font-bold">Research &amp; Mercado</h4><p class="font-body-sm text-body-sm text-on-primary-container">Suscríbase al reporte trimestral de valuación corporativa, tasas CAP y tendencias de real estate institucional.</p><div class="flex flex-col gap-space-xs"><div class="flex items-center"><input class="w-full px-space-sm py-2 bg-surface-card text-on-surface rounded text-body-sm font-body-sm placeholder:text-outline focus:outline-none" placeholder="Correo corporativo..." type="email"/><button class="bg-secondary text-on-secondary px-space-sm py-2 rounded text-label-md font-label-md hover:bg-gold-hover transition-colors ml-1" type="button">Unirse</button></div><span class="font-label-eyebrow text-label-eyebrow text-on-primary-container">Confidencialidad garantizada. Sin spam comercial.</span></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md text-body-sm font-body-sm text-on-primary-container"><p>© 2025 Giaga Propiedades &amp; Corporate Real Estate S.A. Todos los derechos reservados.</p><div class="flex flex-wrap items-center gap-space-lg"><a class="hover:text-secondary-fixed transition-colors" href="#">Términos de Servicio</a><a class="hover:text-secondary-fixed transition-colors" href="#">Políticas de Privacidad</a><a class="hover:text-secondary-fixed transition-colors" href="#">Código de Ética Profesional</a><a class="hover:text-secondary-fixed transition-colors" href="#">Matrículas Habilitantes</a></div></div></div></footer></body></html>
